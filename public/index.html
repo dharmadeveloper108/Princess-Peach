@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Peach">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>💖 Peach</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/images.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>   
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>     
+    </head>
+    <body>
+        <main id="main">
+            <section class="holographic" onmousemove="handleMouseMove(event)">
+                <div class="content"> 
+                    <div class="">
+                    <h4 class="wishes">Happy birthday!</h4>
+                    <h1 class="title">Peach</h1>
+                    <div class="img-left">
+                        <img class="portrait" src="assets/peach.png" />
+                        <p style="text-align: center" class="right dustedpink img-overlay">
+                          Here's a collection of cute things you might like and things that I feel match your personality or aesthetics. 
+                          Hope you like it! </p>
+                    </div>
+                    <div class="appear">Sorry, this is only available for smaller resolutions. Resize the window :)</div>
+                </div>
+                <div class="scroll">
+                    <img class="scroll-img" src="assets/scroll-arrow.gif"/>
+                </div>
+                </div>
+            </section>
+            <section class="panel disappear">
+                <div class="content2">
+                  <div class="grid"></div>
+                </div>
+            </section>
+            <section class="panel disappear">
+              <div class="holographic2" onmousemove="handleMouseMove(event)">
+                <div class="content3">
+                    <p class="message" style="text-align: center;">
+                      And last but not least, <br>the cutest thing I've found!
+                    </p>
+                  <button type="button" class="show-btn">Show</button>
+                  <p class="secret-message">
+                    it's you! :)
+                  </p>
+                  <button type="button" class="invisible" id="last-btn">one last thing...</button>
+                </div>
+              </div>
+            </section>
+            <!-- The Modal -->
+            <div id="one-last-thing" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Do you want to be friends?</h4>
+                <div class="check-container">
+                  <div>
+                    <label for="yes">YES</label>
+                    <input type="checkbox" id="yes" value="YES">
+                  </div>
+
+                  <div>
+                    <label for="no">NO</label>
+                    <input type="checkbox" id="no" value="YES">
+                  </div>
+                </div>
+                <div style="clear: both;"></div>
+                  <div>
+                    <p id="response"></p>
+                  </div>
+              </div>
+
+            </div>
+            <script>
+              AOS.init();
+            </script>
+            <script src="js/main.js" defer></script>
+        </main>
+    </body>
+</html>
